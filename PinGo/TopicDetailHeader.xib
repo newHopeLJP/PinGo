@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BigYoungMediumGB2.0.ttf">
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cpK-z4-LRa" customClass="TopicDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="255"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AsI-N6-cqN">
+                    <rect key="frame" x="0.0" y="0.0" width="507" height="255"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vn-4I-PoM">
+                    <rect key="frame" x="0.0" y="220" width="507" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="话题成员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2K-FU-mbr">
+                            <rect key="frame" x="10" y="0.0" width="56" height="35"/>
+                            <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u76-GK-LG2">
+                            <rect key="frame" x="482" y="0.0" width="15" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="Ddt-BE-Naz"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" image="go_icon"/>
+                            <connections>
+                                <action selector="userIconButtonClick:" destination="cpK-z4-LRa" eventType="touchUpInside" id="XKs-Gw-vWC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgS-dq-2B5" customClass="IBInspectableButton">
+                            <rect key="frame" x="457" y="5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="6Ns-cJ-AEM"/>
+                                <constraint firstAttribute="height" constant="25" id="lRc-0n-ncy"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="canHighlight" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FEr-Tk-Hjb" customClass="IBInspectableButton">
+                            <rect key="frame" x="427" y="5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="XPg-5m-sn9"/>
+                                <constraint firstAttribute="height" constant="25" id="xEI-2s-hqp"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="canHighlight" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-et-ID9" customClass="IBInspectableButton">
+                            <rect key="frame" x="397" y="5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="Lht-Bf-thF"/>
+                                <constraint firstAttribute="height" constant="25" id="aLs-8Y-YYI"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="canHighlight" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="u76-GK-LG2" firstAttribute="leading" secondItem="jgS-dq-2B5" secondAttribute="trailing" id="5QH-Mu-MdE"/>
+                        <constraint firstItem="jgS-dq-2B5" firstAttribute="top" secondItem="9vn-4I-PoM" secondAttribute="top" constant="5" id="6wp-2l-sDm"/>
+                        <constraint firstItem="FEr-Tk-Hjb" firstAttribute="leading" secondItem="RwN-et-ID9" secondAttribute="trailing" constant="5" id="DYw-ap-xSC"/>
+                        <constraint firstItem="jgS-dq-2B5" firstAttribute="leading" secondItem="FEr-Tk-Hjb" secondAttribute="trailing" constant="5" id="ELX-RU-zOf"/>
+                        <constraint firstAttribute="height" constant="35" id="Irp-oy-SUS"/>
+                        <constraint firstItem="H2K-FU-mbr" firstAttribute="top" secondItem="9vn-4I-PoM" secondAttribute="top" id="J1i-ND-KAm"/>
+                        <constraint firstAttribute="bottom" secondItem="H2K-FU-mbr" secondAttribute="bottom" id="S8J-wC-Azt"/>
+                        <constraint firstItem="u76-GK-LG2" firstAttribute="top" secondItem="9vn-4I-PoM" secondAttribute="top" id="TRg-97-tcb"/>
+                        <constraint firstItem="FEr-Tk-Hjb" firstAttribute="centerY" secondItem="jgS-dq-2B5" secondAttribute="centerY" id="VGe-9f-yAS"/>
+                        <constraint firstItem="RwN-et-ID9" firstAttribute="centerY" secondItem="FEr-Tk-Hjb" secondAttribute="centerY" id="fXV-94-Ucb"/>
+                        <constraint firstAttribute="bottom" secondItem="jgS-dq-2B5" secondAttribute="bottom" constant="5" id="j58-DO-sNp"/>
+                        <constraint firstItem="H2K-FU-mbr" firstAttribute="leading" secondItem="9vn-4I-PoM" secondAttribute="leading" constant="10" id="oPk-5a-V0G"/>
+                        <constraint firstAttribute="bottom" secondItem="u76-GK-LG2" secondAttribute="bottom" id="uQr-fK-Shd"/>
+                        <constraint firstAttribute="trailing" secondItem="u76-GK-LG2" secondAttribute="trailing" constant="10" id="xrl-rK-t7e"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5q-uw-plL">
+                    <rect key="frame" x="417" y="182" width="80" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="YvR-Uf-IYQ"/>
+                        <constraint firstAttribute="width" constant="80" id="ze7-AE-yCo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="14"/>
+                    <state key="normal" title="关注" image="unfollow_icon" backgroundImage="follow_btn_bg"/>
+                    <connections>
+                        <action selector="followButtonClick:" destination="cpK-z4-LRa" eventType="touchUpInside" id="Wsa-YS-eFN"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARm-KL-vmt">
+                    <rect key="frame" x="10" y="184" width="397" height="25.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25.5" id="2QG-a4-i3E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUS-w5-jX8">
+                    <rect key="frame" x="10" y="156" width="397" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="3qJ-Q8-DAY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="x5q-uw-plL" secondAttribute="trailing" constant="10" id="1He-p5-13M"/>
+                <constraint firstItem="ARm-KL-vmt" firstAttribute="leading" secondItem="cpK-z4-LRa" secondAttribute="leading" constant="10" id="4r2-zo-6w2"/>
+                <constraint firstItem="ARm-KL-vmt" firstAttribute="top" secondItem="sUS-w5-jX8" secondAttribute="bottom" constant="10" id="8aW-MV-sOE"/>
+                <constraint firstItem="sUS-w5-jX8" firstAttribute="leading" secondItem="cpK-z4-LRa" secondAttribute="leading" constant="10" id="EH3-lu-Qda"/>
+                <constraint firstAttribute="bottom" secondItem="9vn-4I-PoM" secondAttribute="bottom" id="JUS-Wb-dxe"/>
+                <constraint firstItem="x5q-uw-plL" firstAttribute="leading" secondItem="ARm-KL-vmt" secondAttribute="trailing" constant="10" id="a7W-Sw-VJd"/>
+                <constraint firstItem="AsI-N6-cqN" firstAttribute="top" secondItem="cpK-z4-LRa" secondAttribute="top" id="gCy-mZ-o8M"/>
+                <constraint firstAttribute="trailing" secondItem="9vn-4I-PoM" secondAttribute="trailing" id="nGs-Bw-gPZ"/>
+                <constraint firstItem="x5q-uw-plL" firstAttribute="bottom" secondItem="9vn-4I-PoM" secondAttribute="top" constant="-10" id="rtB-eI-v6t"/>
+                <constraint firstAttribute="trailing" secondItem="AsI-N6-cqN" secondAttribute="trailing" id="uW6-8p-Il6"/>
+                <constraint firstAttribute="bottom" secondItem="AsI-N6-cqN" secondAttribute="bottom" id="uzW-8e-HIb"/>
+                <constraint firstItem="AsI-N6-cqN" firstAttribute="leading" secondItem="cpK-z4-LRa" secondAttribute="leading" id="wLE-Pi-9Te"/>
+                <constraint firstItem="x5q-uw-plL" firstAttribute="leading" secondItem="sUS-w5-jX8" secondAttribute="trailing" constant="10" id="yCA-cI-i91"/>
+                <constraint firstItem="ARm-KL-vmt" firstAttribute="bottom" secondItem="9vn-4I-PoM" secondAttribute="top" constant="-10" id="zMS-Co-dIz"/>
+                <constraint firstItem="9vn-4I-PoM" firstAttribute="leading" secondItem="cpK-z4-LRa" secondAttribute="leading" id="zqt-YO-kzL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="AsI-N6-cqN" id="VEg-pl-Ta5"/>
+                <outlet property="contentLabel" destination="ARm-KL-vmt" id="ipm-DH-QJp"/>
+                <outlet property="followButton" destination="x5q-uw-plL" id="8p6-SM-IZu"/>
+                <outlet property="titleLabel" destination="sUS-w5-jX8" id="aYB-0s-Yk9"/>
+                <outletCollection property="userIconButtons" destination="jgS-dq-2B5" id="gPK-Dm-CXv"/>
+                <outletCollection property="userIconButtons" destination="FEr-Tk-Hjb" id="hb8-cu-hjB"/>
+                <outletCollection property="userIconButtons" destination="RwN-et-ID9" id="JWz-cb-vx0"/>
+            </connections>
+            <point key="canvasLocation" x="173.5" y="257.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="follow_btn_bg" width="80" height="28"/>
+        <image name="go_icon" width="7" height="13"/>
+        <image name="unfollow_icon" width="10" height="10"/>
+    </resources>
+</document>

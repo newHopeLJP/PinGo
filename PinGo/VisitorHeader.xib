@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BigYoungMediumGB2.0.ttf">
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VisitorHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="420.5" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8M9-if-zJL">
+                    <rect key="frame" x="134" y="0.0" width="152" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总访问量：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICF-va-JsZ">
+                            <rect key="frame" x="0.0" y="27" width="60" height="13"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="X3o-q0-3sH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="12"/>
+                            <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh3-5V-YPh">
+                            <rect key="frame" x="60" y="27" width="2" height="13.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="2" id="YZR-Hl-6AQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="13"/>
+                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日访问量：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJF-tp-8up">
+                            <rect key="frame" x="72" y="27" width="78" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="78" id="PNL-n2-aog"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="13"/>
+                            <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSy-z2-hVw">
+                            <rect key="frame" x="150" y="27.5" width="2" height="13.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="2" id="4Db-ME-7Uo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="13"/>
+                            <color key="textColor" red="0.98431372549999996" green="0.23137254900000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="sJF-tp-8up" firstAttribute="centerY" secondItem="8M9-if-zJL" secondAttribute="centerY" id="5Ux-O7-XGo"/>
+                        <constraint firstItem="dh3-5V-YPh" firstAttribute="centerY" secondItem="ICF-va-JsZ" secondAttribute="centerY" id="BWm-cx-nuz"/>
+                        <constraint firstItem="TSy-z2-hVw" firstAttribute="centerY" secondItem="8M9-if-zJL" secondAttribute="centerY" id="CNM-jF-tYs"/>
+                        <constraint firstItem="ICF-va-JsZ" firstAttribute="leading" secondItem="8M9-if-zJL" secondAttribute="leading" id="IeB-bc-9D1"/>
+                        <constraint firstItem="TSy-z2-hVw" firstAttribute="baseline" secondItem="sJF-tp-8up" secondAttribute="baseline" id="Ktw-8u-Yao"/>
+                        <constraint firstItem="sJF-tp-8up" firstAttribute="leading" secondItem="dh3-5V-YPh" secondAttribute="trailing" constant="10" id="Yda-UV-Usa"/>
+                        <constraint firstItem="sJF-tp-8up" firstAttribute="baseline" secondItem="dh3-5V-YPh" secondAttribute="baseline" id="fZZ-vX-hSd"/>
+                        <constraint firstItem="dh3-5V-YPh" firstAttribute="baseline" secondItem="ICF-va-JsZ" secondAttribute="baseline" id="nfO-mU-fmL"/>
+                        <constraint firstAttribute="trailing" secondItem="TSy-z2-hVw" secondAttribute="trailing" id="o0Q-2C-abP"/>
+                        <constraint firstItem="TSy-z2-hVw" firstAttribute="leading" secondItem="sJF-tp-8up" secondAttribute="trailing" id="r3w-5a-IRa"/>
+                        <constraint firstItem="dh3-5V-YPh" firstAttribute="leading" secondItem="ICF-va-JsZ" secondAttribute="trailing" id="sVc-Xa-5fr"/>
+                        <constraint firstItem="ICF-va-JsZ" firstAttribute="centerY" secondItem="8M9-if-zJL" secondAttribute="centerY" id="tyB-44-yog"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="8M9-if-zJL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K5v-SK-dCF"/>
+                <constraint firstItem="8M9-if-zJL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="f44-Wr-qTQ"/>
+                <constraint firstItem="8M9-if-zJL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mZE-GB-HLV"/>
+                <constraint firstAttribute="bottom" secondItem="8M9-if-zJL" secondAttribute="bottom" id="xqZ-pj-wXI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="visitorCountLabel" destination="dh3-5V-YPh" id="1Cm-F0-u7x"/>
+                <outlet property="visitorTodayLabel" destination="TSy-z2-hVw" id="Ybi-VK-g6t"/>
+            </connections>
+        </view>
+    </objects>
+</document>

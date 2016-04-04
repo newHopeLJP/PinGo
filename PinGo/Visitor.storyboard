@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8ya-qf-d0g">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BigYoungMediumGB2.0.ttf">
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--谁看过我-->
+        <scene sceneID="QUC-rd-eft">
+            <objects>
+                <tableViewController title="谁看过我" id="8ya-qf-d0g" customClass="VisitorController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dbB-tE-IFI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VisitorCell" rowHeight="50" id="3fh-yU-zro" customClass="VisitorCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3fh-yU-zro" id="nYQ-pI-Ky2">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LLR-6n-qN3" customClass="IBInspectableImageView">
+                                            <rect key="frame" x="15" y="5" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="Yl9-cH-vWh"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPH-gG-zX8">
+                                            <rect key="frame" x="63" y="5" width="35" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="PBK-wU-9Ao"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkt-je-cVp" customClass="IBInspectableButton">
+                                            <rect key="frame" x="63" y="30" width="30" height="15"/>
+                                            <color key="backgroundColor" red="0.98823529409999999" green="0.44705882349999998" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="CxY-LQ-bFF"/>
+                                                <constraint firstAttribute="height" constant="15" id="HBc-5H-QRh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="10"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drC-oB-WoS" customClass="IBInspectableButton">
+                                            <rect key="frame" x="98" y="30" width="40" height="15"/>
+                                            <color key="backgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="P5P-Pf-Skv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="10"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AQ-38-VRG">
+                                            <rect key="frame" x="561" y="34" width="23" height="8"/>
+                                            <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="8"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Mkt-je-cVp" secondAttribute="bottom" constant="4.5" id="3KM-26-nAk"/>
+                                        <constraint firstItem="drC-oB-WoS" firstAttribute="leading" secondItem="Mkt-je-cVp" secondAttribute="trailing" constant="5" id="3UP-p9-TLn"/>
+                                        <constraint firstAttribute="bottom" secondItem="LLR-6n-qN3" secondAttribute="bottom" constant="4.5" id="5s0-WQ-ClJ"/>
+                                        <constraint firstItem="3AQ-38-VRG" firstAttribute="centerY" secondItem="drC-oB-WoS" secondAttribute="centerY" id="Bb9-vH-BNQ"/>
+                                        <constraint firstItem="LLR-6n-qN3" firstAttribute="leading" secondItem="nYQ-pI-Ky2" secondAttribute="leading" constant="15" id="BsN-XB-kHg"/>
+                                        <constraint firstItem="LLR-6n-qN3" firstAttribute="top" secondItem="nYQ-pI-Ky2" secondAttribute="top" constant="5" id="M2R-sY-IGV"/>
+                                        <constraint firstItem="drC-oB-WoS" firstAttribute="centerY" secondItem="Mkt-je-cVp" secondAttribute="centerY" id="SiZ-vM-cwl"/>
+                                        <constraint firstItem="oPH-gG-zX8" firstAttribute="leading" secondItem="LLR-6n-qN3" secondAttribute="trailing" constant="8" id="mAj-mK-c7U"/>
+                                        <constraint firstAttribute="trailing" secondItem="3AQ-38-VRG" secondAttribute="trailing" constant="16" id="p2X-r3-WnO"/>
+                                        <constraint firstItem="Mkt-je-cVp" firstAttribute="top" secondItem="oPH-gG-zX8" secondAttribute="bottom" constant="5" id="ulC-IW-PiP"/>
+                                        <constraint firstItem="Mkt-je-cVp" firstAttribute="leading" secondItem="LLR-6n-qN3" secondAttribute="trailing" constant="8" id="wnW-hH-9qz"/>
+                                        <constraint firstAttribute="bottom" secondItem="drC-oB-WoS" secondAttribute="bottom" constant="4.5" id="yMA-Qg-oMG"/>
+                                        <constraint firstItem="oPH-gG-zX8" firstAttribute="top" secondItem="nYQ-pI-Ky2" secondAttribute="top" constant="5" id="zYa-qT-2oX"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="constellationButton" destination="drC-oB-WoS" id="MdD-ZP-MDm"/>
+                                    <outlet property="headIcon" destination="LLR-6n-qN3" id="AxW-EM-A2Z"/>
+                                    <outlet property="nickNameLabel" destination="oPH-gG-zX8" id="2pZ-ph-CLf"/>
+                                    <outlet property="sexAgeButton" destination="Mkt-je-cVp" id="c2c-5N-4eX"/>
+                                    <outlet property="visitorTimeLabel" destination="3AQ-38-VRG" id="2Az-nU-20O"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8ya-qf-d0g" id="gxh-Ul-BK0"/>
+                            <outlet property="delegate" destination="8ya-qf-d0g" id="ha1-gj-Xa9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pb1-2p-7TR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166" y="233"/>
+        </scene>
+    </scenes>
+</document>

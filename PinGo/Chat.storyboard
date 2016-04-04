@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eRp-va-pMa">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BigYoungMediumGB2.0.ttf">
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Chat Table View Controller-->
+        <scene sceneID="Ll3-Vw-Wg7">
+            <objects>
+                <tableViewController id="eRp-va-pMa" customClass="ChatTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="To3-hX-Xtf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="pIU-q2-7oj">
+                            <rect key="frame" x="0.0" y="70" width="600" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="EUs-vh-snP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="gSR-Og-Sfj">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gSR-Og-Sfj" id="YeR-Ut-J6b">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head_2" translatesAutoresizingMaskIntoConstraints="NO" id="Llr-fd-w90" customClass="IBInspectableImageView">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="RZD-uf-82m"/>
+                                                        <constraint firstAttribute="width" constant="50" id="rgv-OO-xc9"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寂寞小少女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fq-xC-epS">
+                                                    <rect key="frame" x="65" y="15" width="60" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="12" id="l83-St-hQk"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krs-7a-gSb">
+                                                    <rect key="frame" x="562" y="15" width="28" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="12" id="Cum-Rp-kMI"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skE-jx-2tv" customClass="IBInspectableButton">
+                                                    <rect key="frame" x="65" y="32" width="30" height="15"/>
+                                                    <color key="backgroundColor" red="0.98823529409999999" green="0.44705882349999998" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="UU5-bu-0qZ"/>
+                                                        <constraint firstAttribute="height" constant="15" id="ehc-pa-ego"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="10"/>
+                                                    <state key="normal" title="18" image="woman_icon"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sck-aw-qwG" customClass="IBInspectableButton">
+                                                    <rect key="frame" x="100" y="32" width="40" height="15"/>
+                                                    <color key="backgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="bbm-8o-S9B"/>
+                                                        <constraint firstAttribute="height" constant="15" id="n0m-21-C9H"/>
+                                                        <constraint firstAttribute="width" constant="40" id="rar-4c-1b0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="10"/>
+                                                    <state key="normal" title="处女座">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帅哥，约吗" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEQ-Ru-LcG">
+                                                    <rect key="frame" x="65" y="52" width="520" height="13"/>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Krs-7a-gSb" firstAttribute="top" secondItem="YeR-Ut-J6b" secondAttribute="top" constant="15" id="CLB-pZ-bFA"/>
+                                                <constraint firstItem="sck-aw-qwG" firstAttribute="leading" secondItem="skE-jx-2tv" secondAttribute="trailing" constant="5" id="Ng8-2G-GCo"/>
+                                                <constraint firstItem="2fq-xC-epS" firstAttribute="leading" secondItem="Llr-fd-w90" secondAttribute="trailing" constant="5" id="NiK-qS-clc"/>
+                                                <constraint firstItem="skE-jx-2tv" firstAttribute="leading" secondItem="Llr-fd-w90" secondAttribute="trailing" constant="5" id="PUk-gD-4o2"/>
+                                                <constraint firstAttribute="trailing" secondItem="Krs-7a-gSb" secondAttribute="trailing" constant="10" id="VlI-CX-6qO"/>
+                                                <constraint firstItem="skE-jx-2tv" firstAttribute="top" secondItem="2fq-xC-epS" secondAttribute="bottom" constant="5" id="fza-Iy-OaV"/>
+                                                <constraint firstItem="uEQ-Ru-LcG" firstAttribute="top" secondItem="skE-jx-2tv" secondAttribute="bottom" constant="5" id="iSf-Ge-xx8"/>
+                                                <constraint firstItem="2fq-xC-epS" firstAttribute="top" secondItem="YeR-Ut-J6b" secondAttribute="top" constant="15" id="jOs-6T-5QN"/>
+                                                <constraint firstItem="Llr-fd-w90" firstAttribute="top" secondItem="YeR-Ut-J6b" secondAttribute="top" constant="10" id="ks1-wK-DrI"/>
+                                                <constraint firstItem="Llr-fd-w90" firstAttribute="leading" secondItem="YeR-Ut-J6b" secondAttribute="leading" constant="10" id="ojH-lN-BwX"/>
+                                                <constraint firstItem="sck-aw-qwG" firstAttribute="top" secondItem="2fq-xC-epS" secondAttribute="bottom" constant="5" id="r8i-8K-uFp"/>
+                                                <constraint firstItem="uEQ-Ru-LcG" firstAttribute="leading" secondItem="Llr-fd-w90" secondAttribute="trailing" constant="5" id="wpi-41-ekb"/>
+                                                <constraint firstAttribute="trailing" secondItem="uEQ-Ru-LcG" secondAttribute="trailing" constant="15" id="zll-Bq-CCl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="eRp-va-pMa" id="sN9-0d-8gk"/>
+                            <outlet property="delegate" destination="eRp-va-pMa" id="m9q-7k-oWx"/>
+                        </connections>
+                    </tableView>
+                    <keyCommands/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HCg-0f-lu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="head_2" width="200" height="200"/>
+        <image name="woman_icon" width="6" height="9"/>
+    </resources>
+</document>

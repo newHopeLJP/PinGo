@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AlR-qW-Heg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BigYoungMediumGB2.0.ttf">
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Topic Detail Controller-->
+        <scene sceneID="kwP-Lz-jxS">
+            <objects>
+                <viewController id="AlR-qW-Heg" customClass="TopicDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8a5-xh-b5R"/>
+                        <viewControllerLayoutGuide type="bottom" id="XcN-hq-mw1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="14a-MH-N9f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="v5w-OR-Kvz">
+                                <rect key="frame" x="0.0" y="-64" width="600" height="664"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1m3-Fl-JH9" customClass="TopicDetailCollectionViewFlowLayout">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="topicDetailCell" id="ZQ6-Hx-a5I" customClass="TopicDetailCell">
+                                        <rect key="frame" x="10" y="10" width="285" height="497"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="285" height="497"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OaA-Uq-hml" customClass="IBInspectableButton">
+                                                    <rect key="frame" x="5" y="5" width="25" height="25"/>
+                                                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="9sG-mS-KKL"/>
+                                                        <constraint firstAttribute="width" constant="25" id="WzY-Oc-j9k"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEF-q3-X6C">
+                                                    <rect key="frame" x="35" y="5" width="245" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="10" id="XRI-lY-owA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="8"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXY-bF-UbD">
+                                                    <rect key="frame" x="35" y="20" width="245" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="10" id="E3M-uP-bao"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="8"/>
+                                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <state key="normal" title="999+" image="discover_square_hot  pic_follow_icon">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mpM-Pd-kEb">
+                                                    <rect key="frame" x="256" y="40" width="24" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <state key="normal" image="discover_subject_detail_follow_icon" backgroundImage="discover_subject_detail_follow_bg"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PH-6I-dQk">
+                                                    <rect key="frame" x="5" y="420" width="275" height="11"/>
+                                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eOz-MM-nYt">
+                                                    <rect key="frame" x="0.0" y="35" width="285" height="380"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="eOz-MM-nYt" secondAttribute="height" multiplier="3:4" id="dR0-jp-zpV"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="OaA-Uq-hml" firstAttribute="leading" secondItem="ZQ6-Hx-a5I" secondAttribute="leading" constant="5" id="2zD-W8-Y8z"/>
+                                            <constraint firstAttribute="trailing" secondItem="VEF-q3-X6C" secondAttribute="trailing" constant="5" id="3MN-7D-P5P"/>
+                                            <constraint firstItem="eOz-MM-nYt" firstAttribute="top" secondItem="gXY-bF-UbD" secondAttribute="bottom" constant="5" id="7e2-M2-USc"/>
+                                            <constraint firstItem="gXY-bF-UbD" firstAttribute="leading" secondItem="OaA-Uq-hml" secondAttribute="trailing" constant="5" id="HAs-ld-Zdz"/>
+                                            <constraint firstAttribute="trailing" secondItem="eOz-MM-nYt" secondAttribute="trailing" id="Jkl-ir-YJk"/>
+                                            <constraint firstAttribute="trailing" secondItem="gXY-bF-UbD" secondAttribute="trailing" constant="5" id="Jzh-T8-ioX"/>
+                                            <constraint firstItem="mpM-Pd-kEb" firstAttribute="leading" secondItem="eOz-MM-nYt" secondAttribute="trailing" constant="-29" id="Nnw-2f-2Yg"/>
+                                            <constraint firstItem="4PH-6I-dQk" firstAttribute="leading" secondItem="ZQ6-Hx-a5I" secondAttribute="leadingMargin" constant="-3" id="QYr-Je-gFg"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="4PH-6I-dQk" secondAttribute="trailing" constant="-3" id="W9V-4C-rqR"/>
+                                            <constraint firstItem="OaA-Uq-hml" firstAttribute="top" secondItem="ZQ6-Hx-a5I" secondAttribute="top" constant="5" id="ZjD-ys-viy"/>
+                                            <constraint firstItem="VEF-q3-X6C" firstAttribute="top" secondItem="ZQ6-Hx-a5I" secondAttribute="top" constant="5" id="aeA-hm-CGi"/>
+                                            <constraint firstItem="eOz-MM-nYt" firstAttribute="leading" secondItem="ZQ6-Hx-a5I" secondAttribute="leading" id="bqc-h1-Seh"/>
+                                            <constraint firstItem="gXY-bF-UbD" firstAttribute="top" secondItem="VEF-q3-X6C" secondAttribute="bottom" constant="5" id="dGZ-L0-pUO"/>
+                                            <constraint firstItem="4PH-6I-dQk" firstAttribute="top" secondItem="eOz-MM-nYt" secondAttribute="bottom" constant="5" id="gW0-s6-dW9"/>
+                                            <constraint firstItem="VEF-q3-X6C" firstAttribute="leading" secondItem="OaA-Uq-hml" secondAttribute="trailing" constant="5" id="iJc-S3-EPS"/>
+                                            <constraint firstItem="mpM-Pd-kEb" firstAttribute="bottom" secondItem="eOz-MM-nYt" secondAttribute="top" constant="29" id="nB7-21-Au3"/>
+                                        </constraints>
+                                        <size key="customSize" width="285" height="497"/>
+                                        <connections>
+                                            <outlet property="bgImageView" destination="eOz-MM-nYt" id="PWb-H2-4dY"/>
+                                            <outlet property="descLabel" destination="4PH-6I-dQk" id="qMh-O5-IqW"/>
+                                            <outlet property="starButton" destination="mpM-Pd-kEb" id="oKO-3d-pC9"/>
+                                            <outlet property="starNumButton" destination="gXY-bF-UbD" id="S7R-1Y-gtV"/>
+                                            <outlet property="userIconButton" destination="OaA-Uq-hml" id="dwC-dG-Tcy"/>
+                                            <outlet property="userNameLabel" destination="VEF-q3-X6C" id="aKi-P8-ik6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="AlR-qW-Heg" id="y0X-cH-NWg"/>
+                                    <outlet property="delegate" destination="AlR-qW-Heg" id="Pmb-ia-g59"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="v5w-OR-Kvz" secondAttribute="trailing" id="8ra-Jm-znv"/>
+                            <constraint firstItem="v5w-OR-Kvz" firstAttribute="leading" secondItem="14a-MH-N9f" secondAttribute="leading" id="PCG-kh-gPT"/>
+                            <constraint firstItem="v5w-OR-Kvz" firstAttribute="top" secondItem="8a5-xh-b5R" secondAttribute="bottom" constant="-84" id="SqI-xI-UNN"/>
+                            <constraint firstItem="XcN-hq-mw1" firstAttribute="top" secondItem="v5w-OR-Kvz" secondAttribute="bottom" id="TJp-qw-5vk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="v5w-OR-Kvz" id="Uk6-dU-ZR5"/>
+                        <outlet property="layout" destination="1m3-Fl-JH9" id="ZtR-hS-dLT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNw-dK-7uY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="discover_square_hot  pic_follow_icon" width="10" height="9"/>
+        <image name="discover_subject_detail_follow_bg" width="24" height="24"/>
+        <image name="discover_subject_detail_follow_icon" width="13" height="12"/>
+    </resources>
+</document>

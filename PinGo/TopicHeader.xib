@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BigYoungMediumGB2.0.ttf">
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+            <string>BigYoungMediumGB2.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TopicHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="588" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HC-6x-sdT">
+                    <rect key="frame" x="0.0" y="130" width="588" height="70"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="a0o-NL-Ypl">
+                            <rect key="frame" x="0.0" y="0.0" width="195.5" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" image="square_top_icon" translatesAutoresizingMaskIntoConstraints="NO" id="2Pr-BL-5r4">
+                                    <rect key="frame" x="0.0" y="0.0" width="195.5" height="51"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP榜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edg-RS-3DB">
+                                    <rect key="frame" x="0.0" y="51" width="195.5" height="15"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVm-ki-cbo">
+                                    <rect key="frame" x="0.0" y="66" width="195.5" height="4"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="4" id="4LJ-Ob-869"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" tag="1" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4ng-UH-332">
+                            <rect key="frame" x="196" y="0.0" width="195" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" image="square_daren_icon" translatesAutoresizingMaskIntoConstraints="NO" id="NEN-pw-acB">
+                                    <rect key="frame" x="0.0" y="0.0" width="195" height="51"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="达人" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhA-s8-Pw0">
+                                    <rect key="frame" x="0.0" y="51" width="195" height="15"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDg-fH-ylM">
+                                    <rect key="frame" x="0.0" y="66" width="195" height="4"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="4" id="WlO-Sa-vXT"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mxo-1y-vpZ">
+                            <rect key="frame" x="392" y="0.0" width="195.5" height="70"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" image="square_xingkong_icon" translatesAutoresizingMaskIntoConstraints="NO" id="xfk-NT-YVU">
+                                    <rect key="frame" x="0.0" y="0.0" width="195.5" height="51"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聊吧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxh-Xx-0by">
+                                    <rect key="frame" x="0.0" y="51" width="195.5" height="15"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" name="BigYoungMediumGB2.0" family="BigYoungMediumGB2.0" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASZ-sF-10j">
+                                    <rect key="frame" x="0.0" y="66" width="195.5" height="4"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="4" id="3OT-x4-qxf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="4ng-UH-332" firstAttribute="leading" secondItem="a0o-NL-Ypl" secondAttribute="trailing" constant="1" id="2a1-IX-LkW"/>
+                        <constraint firstItem="4ng-UH-332" firstAttribute="width" secondItem="a0o-NL-Ypl" secondAttribute="width" id="AW4-up-eop"/>
+                        <constraint firstAttribute="bottom" secondItem="Mxo-1y-vpZ" secondAttribute="bottom" id="Nuz-00-CtZ"/>
+                        <constraint firstItem="Mxo-1y-vpZ" firstAttribute="leading" secondItem="4ng-UH-332" secondAttribute="trailing" constant="1" id="UV2-Ve-9N7"/>
+                        <constraint firstAttribute="trailing" secondItem="Mxo-1y-vpZ" secondAttribute="trailing" id="YhY-Xd-ENG"/>
+                        <constraint firstItem="a0o-NL-Ypl" firstAttribute="top" secondItem="8HC-6x-sdT" secondAttribute="top" id="a1B-PJ-wcA"/>
+                        <constraint firstItem="a0o-NL-Ypl" firstAttribute="leading" secondItem="8HC-6x-sdT" secondAttribute="leading" id="dSa-4I-rLw"/>
+                        <constraint firstItem="Mxo-1y-vpZ" firstAttribute="top" secondItem="8HC-6x-sdT" secondAttribute="top" id="enI-Nd-3tq"/>
+                        <constraint firstAttribute="height" constant="70" id="feb-cU-bkI"/>
+                        <constraint firstAttribute="bottom" secondItem="4ng-UH-332" secondAttribute="bottom" id="hur-GK-Lk7"/>
+                        <constraint firstAttribute="bottom" secondItem="a0o-NL-Ypl" secondAttribute="bottom" id="l3z-el-mPk"/>
+                        <constraint firstItem="Mxo-1y-vpZ" firstAttribute="width" secondItem="a0o-NL-Ypl" secondAttribute="width" id="svD-kx-mAg"/>
+                        <constraint firstItem="4ng-UH-332" firstAttribute="top" secondItem="8HC-6x-sdT" secondAttribute="top" id="z77-Ut-1m5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HP-Z2-sFG">
+                    <rect key="frame" x="0.0" y="0.0" width="588" height="130"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="y2u-TB-KOf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8HC-6x-sdT" secondAttribute="trailing" id="Fcz-9o-rGV"/>
+                <constraint firstAttribute="trailing" secondItem="8HP-Z2-sFG" secondAttribute="trailing" id="HGq-y9-nN1"/>
+                <constraint firstItem="8HP-Z2-sFG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YJu-Jj-NWQ"/>
+                <constraint firstItem="8HC-6x-sdT" firstAttribute="top" secondItem="8HP-Z2-sFG" secondAttribute="bottom" id="jmK-WD-CwX"/>
+                <constraint firstItem="8HC-6x-sdT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mLv-Hc-mji"/>
+                <constraint firstItem="8HP-Z2-sFG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vmZ-5c-pKg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="topView" destination="8HP-Z2-sFG" id="jZF-3v-Q8B"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="square_daren_icon" width="32" height="32"/>
+        <image name="square_top_icon" width="32" height="32"/>
+        <image name="square_xingkong_icon" width="32" height="32"/>
+    </resources>
+</document>
