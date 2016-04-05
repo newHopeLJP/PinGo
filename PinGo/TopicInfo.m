@@ -100,7 +100,7 @@
     NSURL *url=[NSURL URLWithString:urlStr];
     NSURLRequest *request=[NSURLRequest requestWithURL:url];
     NSURLSessionDataTask *dataTask=[session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
+        if (!error) {
         NSDictionary *jsonObjet=[NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         NSDictionary *topicInfoData=jsonObjet[@"data"];
         NSMutableArray *topicInfoList=[[NSMutableArray alloc]init];
@@ -115,7 +115,7 @@
         }
         completion(isEnd,tempSortValue,topicInfoList);
         
-        if (error) {
+         }else{
             NSLog(@"%@",[error description]);
             completion(YES,@"0",nil);
         }
