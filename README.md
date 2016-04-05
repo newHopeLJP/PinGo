@@ -8,7 +8,10 @@
 
 
 ###屏幕截图
-![jpg](https://github.com/gaowanli/PinGo/blob/master/Screenshots.jpg) 
+![home](https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Home.png)
+![discover1](https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Discover1.png)
+![discover2](https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Discover2.png) 
+![profile](https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Profile.png) 
 
 ###适配
 * iOS 9.0+
