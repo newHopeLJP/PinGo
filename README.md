@@ -8,13 +8,9 @@
 
 
 ###屏幕截图
-<img src="https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Home.png" width = "375" height = "667" alt="Home" align=center />
+<img src="https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Home.png" width = "375" height = "667" alt="Home" align=center />        <img src="https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Profile.png" width = "375" height = "667" alt="Profile" align=center />
 
-<img src="https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Discover1.png" width = "375" height = "667" alt="Discover" align=center />
-
-<img src="https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Discover2.png" width = "375" height = "667" alt="Discover" align=center />
-
-<img src="https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Profile.png" width = "375" height = "667" alt="Profile" align=center />
+<img src="https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Discover2.png" width = "375" height = "667" alt="Discover" align=center />        <img src="https://github.com/newHopeLJP/PinGo/blob/master/Screenshot/Discover1.png" width = "375" height = "667" alt="Discover" align=center />
 
 ###适配
 * iOS 9.0+
