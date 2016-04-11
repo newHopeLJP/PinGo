@@ -2,9 +2,10 @@
 ##纯Objective-C编写的仿“随遇”App
 
 ###简介
-* 此项目一方面用来巩固所学的Objective-C，另一方面用来熟悉Swift语言.
-  素材均来自[swift版仿“随遇”App](https://github.com/gaowanli/PinGo).
-* 用Storyboard+Xib+Autolayout的方式来实现UI部分
+* 此项目一方面用来巩固所学的Objective-C，另一方面用来熟悉Swift语言。
+  素材均来自[swift版仿“随遇”App](https://github.com/gaowanli/PinGo)。
+* 用Storyboard+Xib+Autolayout的方式来实现UI部分。
+* 使用CocoaPods管理用到的第三方库。
 
 
 ###屏幕截图
