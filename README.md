@@ -3,7 +3,7 @@
 
 ###简介
 * 此项目用来巩固所学的Objective-C以及学习实现一些界面效果。
-* 用Storyboard+Xib+Autolayout的方式来实现UI部分。
+* 用Storyboard+Xib+Autolayout的方式来实现一部分UI。
 * 使用CocoaPods管理用到的第三方库。
 
 
